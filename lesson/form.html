@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .all-browsers {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+
+    .all-browsers>h1,
+    .browser {
+      margin: 10px;
+      padding: 5px;
+    }
+
+    .browser {
+      background: white;
+    }
+
+    .browser>h2,
+    p {
+      margin: 4px;
+      font-size: 90%;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <button onclick="showContent()">Show hidden content</button>
+
+  <template>
+    <h2>Flower</h2>
+    <img src="img_white_flower.jpg" width="214" height="204">
+  </template>
+
+  <script>
+    function showContent() {
+      var temp = document.getElementsByTagName("template")[0];
+      var clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+  </script>
+</body>
+
+</html>

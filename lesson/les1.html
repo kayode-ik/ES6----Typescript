@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <h2>JS</h2>
+    <button id="btn">click me to display Date and Time</button>
+    <p id="demo">demo</p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date
+    </button>
+    <!-- <p>Emoji1: &#128512; </p>
+    <p>Emoji2: &#128525; </p>
+    <p>Emoji3: &#128151; </p> -->
+
+    <br>
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <br><br>
+
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the
+            conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was
+            founded
+            in 1961.</p>
+    </section>
+    <br>
+    <article class="all-browsers">
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web
+                browser today!</p>
+        </article>
+        <article class="browser">
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most
+                popular
+                web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced
+                Internet
+                Explorer.</p>
+        </article>
+    </article>
+
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great
+        summer together with my family!</p>
+
+    <aside>
+        <h4>Epcot Center</h4>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+            award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+
+    <script>
+        const button = document.getElementById("btn");
+
+        button.addEventListener('click', () => {
+            demo.innerHTML = Date();
+        })
+    </script>
+</body>
+
+</html>
