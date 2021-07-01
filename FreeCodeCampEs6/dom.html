@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Manipulation</title>
+</head>
+
+<style>
+    .form__container {
+        display: grid;
+        align-content: center;
+        margin: 10 0;
+        /* background: yellow; */
+        width: 100%;
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    #btn {
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+</style>
+
+<body>
+
+    <h2>Dom Manipulation</h2>
+    <form action="#" class="form__container">
+        <!-- FirstName Input -->
+        <label for="firstname">FirstName:</label>
+        <input type="text" id="firstname" placeholder="Enter Lastname"> <br>
+       
+        <!-- LastName Input -->
+        <label for="lastname">LastName:</label>
+        <input type="text" id="lastname" placeholder="Enter Lastname">
+        <button id="btn">Submit</button>
+    </form>
+    <script src="func.js"></script>
+    <h1> </h1>
+</body>
+
+</html>
