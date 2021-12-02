@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"> BBBOOTSTRAP.COM </div>
+        <div class="icon" id="bell"> <img src="https://i.imgur.com/AC7dgLA.png" alt=""> </div>
+        <div class="notifications" id="box">
+            <h2>Notifications - <span>2</span></h2>
+            <div class="notifications-item"> <img src="https://i.imgur.com/uIgDDDd.jpg" alt="img">
+                <div class="text">
+                    <h4>Samso aliao</h4>
+                    <p>Samso Nagaro Like your home work</p>
+                </div>
+            </div>
+            <div class="notifications-item"> <img src="https://img.icons8.com/flat_round/64/000000/vote-badge.png" alt="img">
+                <div class="text">
+                    <h4>John Silvester</h4>
+                    <p>+20 vista badge earned</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+        $(document).ready(function(){
+
+
+
+
+var down = false;
+
+$('#bell').click(function(e){
+
+var color = $(this).text();
+if(down){
+
+$('#box').css('height','0px');
+$('#box').css('opacity','0');
+down = false;
+}else{
+
+$('#box').css('height','auto');
+$('#box').css('opacity','1');
+down = true;
+
+}
+
+});
+
+});
+    </script>
+</body>
+</html>
